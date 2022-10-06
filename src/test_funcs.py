@@ -11,16 +11,20 @@ from funcs import (
 
 
 def test_prod():
-    assert prod(1, 2, 3) == 'TEST ME'
+    assert prod(1, 2, 3) == 6
+    assert prod(1,1,1) == 1
+    assert prod(1,1,0) == 0
 
 
 def test_prod2():
-    assert prod2(2) == 'TEST ME'
+    assert prod2(42) == 378
+    assert prod2(42) == prod(3,3,42)
 
 
 def test_longest():
-    assert longest([1, 2, 3], [4, 5]) == 'TEST ME'
+    assert longest([1, 2, 3], [4, 5]) == [1,2,3]
+    assert longest([],[]) == []
 
 
 def test_dist():
-    assert dist((1, 2), (3, 4)) == 'TEST ME'
+    assert dist((1, 2), (3, 4)) == 2.8284271247461903
